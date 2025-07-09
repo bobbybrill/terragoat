@@ -93,6 +93,14 @@ terraform init \
 terraform apply
 ```
 
+#### Deploy the free-tier Linux example only
+
+```bash
+cd terraform/aws/
+terraform init
+terraform apply -target=aws_instance.free_linux
+```
+
 #### Remove TerraGoat (AWS)
 
 ```bash
